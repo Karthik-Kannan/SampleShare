@@ -1,4 +1,0 @@
-DirectoryIndex index.php
-#test
-#RewriteEngine On
-#RewriteRule ^$ /public_html [L]
