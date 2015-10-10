@@ -39,8 +39,7 @@
 				<!-- Home -->
 				<article id="home" class="panel">
 					<header>
-						<h1> SampleShare </h1>
-						<p> Collaboration and Sharing for Music Samples Everywhere </p>
+						<?php include 'home_header.php'; ?>
 					</header>
 				</article>
 				
