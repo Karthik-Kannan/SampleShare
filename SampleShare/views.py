@@ -16,6 +16,11 @@ def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1] in ALLOWED_EXTENSIONS
 
+
+@app.route('/')
+def index():
+    return "Hello World"
+
 @app.route('/uploaded_file')
 def uploaded_file():
     return "Hello World"
