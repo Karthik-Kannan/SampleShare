@@ -1,11 +1,13 @@
 import SampleShare
 from SampleShare import app
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, redirect,url_for
 from werkzeug import secure_filename
+from os import path
+import os
 import sys
 
-sys.path.append('/Users/hennajethani/Hack_CU/SampleShare')
-UPLOAD_FOLDER = '/Users/hennajethani/Hack_CU/'
+UPLOAD_FOLDER = '../'
+UPLOAD_FOLDER = path.abspath(UPLOAD_FOLDER)
 
 ALLOWED_EXTENSIONS = set(['wav'])
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
@@ -18,7 +20,7 @@ def allowed_file(filename):
 def uploaded_file():
     return "Hello World"
 
-@app.route('/upload', methods=['POST'])
+@app.route('/upload', methods=['POST', 'GET'])
 def upload():
     if request.method == 'POST':
         file = request.files['file']

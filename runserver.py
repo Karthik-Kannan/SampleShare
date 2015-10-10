@@ -1,16 +1,8 @@
-from flask import Flask
-from flask import render_template
-
-app = Flask(__name__)
-UPLOAD_FOLDER = '/home/hennajethani/Hack_CU'
-
-ALLOWED_EXTENSIONS = set(['wav'])
-app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-
-@app.route('/hello')
-def hello_world():
-    return render_template('upload.html')
+import sys
+from os import path
+sys.path.append(path.abspath('SampleShare'))
+from SampleShare import app
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
 
