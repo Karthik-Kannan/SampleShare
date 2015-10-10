@@ -1,57 +1,20 @@
-<!DOCTYPE HTML>
-<!--
-	Astral by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>SampleShare - Sharing Samples Simply</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="../public_html/assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="../public_html/assets/css/noscript.css" /></noscript>
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		
-		<!-- Scripts -->
-		<script src="../public_html/assets/js/jquery.min.js"></script>
-		<script src="../public_html/assets/js/skel.min.js"></script>
-		<script src="../public_html/assets/js/skel-viewport.min.js"></script>
-		<script src="../public_html/assets/js/util.js"></script>
-		<script src="../public_html/assets/js/playFile.js"></script>
-		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-		<script src="../public_html/assets/js/main.js"></script>
-	</head>
-	
-	<body>
-		<!-- Wrapper-->
-		<div id="wrapper">
-			<!-- Nav -->
-			<nav id="nav">
-				<a href="#home" class="icon fa-home active"><span>Home</span></a>
-				<a href="#about" class="icon fa-info-circle"><span>About</span></a>
-				<a href="#samples" class="icon fa-music"><span>Find</span></a>
-				<a href="#upload" class="icon fa-upload"><span>Upload</span></a>
-				<a href="#contact" class="icon fa-envelope"><span>Contact</span></a>
-				<a href="#account" class="icon fa-user"><span>Account</span></a>
-			</nav>
-			
-			<!-- Main -->
-			<div id="main">
-				<!-- Home -->
-				<article>
-					<a href="#upload" class="button jumplink">Upload Samples</a>
-					<a href="#samples" class="button jumplink">Browse Samples</a>
-				</article>
-			</div>
-			
-			<!-- Footer -->
-			<div id="footer">
-				<ul class="copyright">
-					<li>&copy; OceanShare</li>
-				</ul>
-			</div>
-		</div>		
-	</body>
+  <head>
+    <title>Flask App</title>    
+  </head>
+  <body>
+   
+    <header>
+      <div class="container">
+        <h1 class="logo">Flask App</h1>
+      </div>
+    </header> 
+     
+    <div class="container">
+      {% block nav %}
+      {% endblock %}
+    </div>
+     
+  </body>
 </html>
