@@ -1,17 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-
-
-
-<script>
-
 function playFile(obj) {
   var sound = document.getElementById('sound');
   var reader = new FileReader();
   reader.onload = (function(audio) {return function(e) {audio.src = e.target.result;};})(sound);
   reader.addEventListener('load', function() {
-    document.getElementById("sound").play()
+    document.getElementById("sound")
   });
   reader.readAsDataURL(obj.files[0]);
  var file = obj.files[0];
@@ -21,18 +13,3 @@ function playFile(obj) {
     console.log("type : " + file.type);
     console.log("date : " + file.lastModified);
 }
-
-
-
-
-</script>
-<input type="file" id="audio" onchange="playFile(this)" />
-<audio id="sound" controls>
-</audio>
-
-</head>
-<body>
-
-
-</body>
-</html>
