@@ -29,9 +29,11 @@
 			<!-- Nav -->
 			<nav id="nav">
 				<a href="#home" class="icon fa-home active"><span>Home</span></a>
-				<a href="#samples" class="icon fa-folder"><span>Samples</span></a>
+				<a href="#about" class="icon fa-info-circle"><span>About</span></a>
+				<a href="#samples" class="icon fa-music"><span>Find</span></a>
+				<a href="#upload" class="icon fa-upload"><span>Upload</span></a>
 				<a href="#contact" class="icon fa-envelope"><span>Contact</span></a>
-				<a href="#" class="icon fa-twitter"><span>Twitter</span></a>
+				<a href="#account" class="icon fa-user"><span>Account</span></a>
 			</nav>
 			
 			<!-- Main -->
@@ -41,102 +43,65 @@
 					<header>
 						<?php include 'home_header.php'; ?>
 					</header>
+					<section>
+						<?php include 'home_section.php'; ?>
+					</section>
+				</article>
+				
+				<!-- About -->
+				<article id="about" class="panel">
+					<header>
+						<?php include 'about_header.php'; ?>
+					</header>
+					<section>
+						<?php include 'about_section.php'; ?>
+					</section>
 				</article>
 				
 				<!-- Samples -->
 				<article id="samples" class="panel">
 					<header>
-						<h2>Samples</h2>
+						<?php include 'samples_header.php'; ?>
 					</header>
-					<p>
-						Stuff. TBD
-					</p>
 					
 					<section>
-						<div class="row">
-							<div class="4u 12u$(mobile)">
-								<a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
-							</div>
-							
-							<div class="4u 12u$(mobile)">
-								<a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
-							</div>
-							
-							<div class="4u$ 12u$(mobile)">
-								<a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
-							</div>
-							
-							<div class="4u 12u$(mobile)">
-								<a href="#" class="image fit"><img src="images/pic04.jpg" alt=""></a>
-							</div>
-							
-							<div class="4u 12u$(mobile)">
-								<a href="#" class="image fit"><img src="images/pic05.jpg" alt=""></a>
-							</div>
-							
-							<div class="4u$ 12u$(mobile)">
-								<a href="#" class="image fit"><img src="images/pic06.jpg" alt=""></a>
-							</div>
-							
-							<div class="4u 12u$(mobile)">
-								<a href="#" class="image fit"><img src="images/pic07.jpg" alt=""></a>
-							</div>
-							
-							<div class="4u 12u$(mobile)">
-								<a href="#" class="image fit"><img src="images/pic08.jpg" alt=""></a>
-							</div>
-							
-							<div class="4u$ 12u$(mobile)">
-								<a href="#" class="image fit"><img src="images/pic09.jpg" alt=""></a>
-							</div>
-							
-							<div class="4u 12u$(mobile)">
-								<a href="#" class="image fit"><img src="images/pic10.jpg" alt=""></a>
-							</div>
-							
-							<div class="4u 12u$(mobile)">
-								<a href="#" class="image fit"><img src="images/pic11.jpg" alt=""></a>
-							</div>
-							
-							<div class="4u$ 12u$(mobile)">
-								<a href="#" class="image fit"><img src="images/pic12.jpg" alt=""></a>
-							</div>
-						</div>
+						<?php include 'samples_section.php'; ?>
 					</section>
 				</article>
 
+				<!-- Upload Samples -->
+				<article id="upload" class="panel">
+					<header>
+						<?php include 'upload_header.php'; ?>
+					</header>
+					
+					<section>
+						<?php include 'upload_section.php'; ?>
+					</section>
+				</article>
+				
 				<!-- Contact -->
 				<article id="contact" class="panel">
 					<header>
-						<h2>Contact Me</h2>
+						<?php include 'contact_header.php'; ?>
 					</header>
 					
-					<form action="#" method="post">
-						<div>
-							<div class="row">
-								<div class="6u 12u$(mobile)">
-									<input type="text" name="name" placeholder="Name" />
-								</div>
-								
-								<div class="6u$ 12u$(mobile)">
-									<input type="text" name="email" placeholder="Email" />
-								</div>
-								
-								<div class="12u$">
-									<input type="text" name="subject" placeholder="Subject" />
-								</div>
-								
-								<div class="12u$">
-									<textarea name="message" placeholder="Message" rows="8"></textarea>
-								</div>
-								
-								<div class="12u$">
-									<input type="submit" value="Send Message" />
-								</div>
-							</div>
-						</div>
-					</form>
+					<section>
+						<?php include 'contact_section.php'; ?>
+					</section>
 				</article>
+				
+				<!-- User Account -->
+				<article id="account" class="panel">
+					<header>
+						<?php include 'account_header.php'; ?>
+					</header>
+					
+					<section>
+						<?php include 'account_section.php'; ?>
+					</section>
+				</article>
+				
 			</div>
 			
 			<!-- Footer -->
