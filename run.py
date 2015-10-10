@@ -1,9 +1,12 @@
 from flask import Flask
-app = Flask(__name__)
+from flask import render_template
 
-@app.route('/')
+app = Flask(__name__)
+UPLOAD_FOLDER = '/test/'
+
+@app.route('/hello')
 def hello_world():
-    return 'Hello World!'
+    return render_template('upload.html')
 
 if __name__ == '__main__':
     app.run()
