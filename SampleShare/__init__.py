@@ -4,7 +4,7 @@ from flask import render_template
 app = Flask(__name__)
 import SampleShare.views
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://hack_cu:hack_cu@localhost/hack_cu_test'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://oceanshare_admin:dqWHbHaf3YuHP@oceanshare-samples.c9val8nncp23.us-west-2.rds.amazonaws.com/samples'
 db = SQLAlchemy(app)
 
 
@@ -23,5 +23,4 @@ class Sample(db.Model):
         self.url = url
         self.uploader = uploader
         self.file_size = file_size
-
 
