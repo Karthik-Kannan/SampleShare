@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html>
-<<<<<<< HEAD
 	<head>
 		<title>SampleShare - Sharing Samples Simply</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="public_html/assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="public_html/assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="../static/css/main.css" />
+		<noscript><link rel="stylesheet" href="../static/css/noscript.css" /></noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		
 		<!-- Scripts -->
-		<script src="public_html/assets/js/jquery.min.js"></script>
-		<script src="public_html/assets/js/skel.min.js"></script>
-		<script src="public_html/assets/js/skel-viewport.min.js"></script>
-		<script src="public_html/assets/js/util.js"></script>
-		<script src="public_html/assets/js/playFile.js"></script>
+		<script src="../static/js/jquery.min.js"></script>
+		<script src="../static/js/skel.min.js"></script>
+		<script src="../static/js/skel-viewport.min.js"></script>
+		<script src="../static/js/util.js"></script>
+		<script src="../static/js/playFile.js"></script>
 		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-		<script src="public_html/assets/js/main.js"></script>
+		<script src="../static/js/main.js"></script>
 	</head>
 	
 	<body>
@@ -72,6 +71,8 @@
 					</header>
 					
 					<section>
+					{% include 'browse.html' %}
+					<!--
 						<div class="row">
 							<div class="4u 12u$(mobile)">
 								<a href="#" class="image fit"><img src="../public_html/images/pic01.jpg" alt=""></a>
@@ -121,16 +122,14 @@
 								<a href="#" class="image fit"><img src="../public_html/images/pic12.jpg" alt=""></a>
 							</div>
 						</div>
+					-->
 					</section>
 				</article>
 
 				<!-- Upload Samples -->
 				<article id="upload" class="panel">
-					<header>
-						<h1> SampleShare </h1>
-						<p> Collaboration and Sharing for Music Samples Everywhere </p>
-						<p> Stuff TBD </p>
-					</header>
+					{% include 'nav.html' %}
+					{% include 'upload.html' %}
 					
 					<section>
 						<h1> Header 1 </h1>
@@ -203,30 +202,4 @@
 			</div>
 		</div>		
 	</body>
-=======
-  <head>
-    <title>Flask App</title>
-
-    <script type="text/javascript" src="../static/js/main.js"></script>
-  </head>
-  <body>
-   
-    <header>
-      <div class="container">
-        <h1 class="logo">Flask App</h1>
-      </div>
-
-      {% include 'nav.html' %}
-    </header>
-
-    <div class="container">
-    	<h2>Upload File</h2>
-    	{% include 'upload.html' %}
-
-		<h2>Browse Files</h2>
-		{% include 'browse.html' %}
-    </div>
-     
-  </body>
->>>>>>> origin/master
 </html>
