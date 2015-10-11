@@ -15,6 +15,7 @@ class Sample(db.Model):
     username = db.Column(db.String(80))
     id_val = db.Column(db.Integer, primary_key=True)
     url = db.Column(db.VARCHAR(500))
+    tags = db.Column(db.String(500))
     uploader = db.Column(db.String(80))
     file_size = db.Column(db.Float)
     def __init__(self, username = 'a', date_time = '12/04/2011 12:00:00 AM', id_val = 1, url = 'blah', uploader = 'blahagain', file_size = 30):
