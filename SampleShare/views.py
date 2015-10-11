@@ -1,5 +1,5 @@
 import SampleShare
-from SampleShare import app, Sample
+from SampleShare import app
 from flask import Flask, request, render_template, redirect,url_for
 from werkzeug import secure_filename
 from os import path
