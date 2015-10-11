@@ -4,6 +4,7 @@
 		<title>SampleShare - Sharing Samples Simply</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="shortcut icon" href="../static/favicon.ico.ico" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="../static/css/main.css" />
 		<noscript><link rel="stylesheet" href="../static/css/noscript.css" /></noscript>
@@ -37,19 +38,44 @@
 				<!-- Home -->
 				<article id="home" class="panel">
 					<header>
-						<h1> SampleShare </h1>
-						<p> Collaboration and Sharing for Music Samples Everywhere </p>
-						
-						<a href="#upload" class="button jumplink">Upload Samples</a>
-						<a href="#samples" class="button jumplink">Browse Samples</a>
+						<h1> OceanShare </h1>
+						<p> Free Samples. For You. All The Time. </p>
 					</header>
+					
+					<section>
+						<h2> Share Your Samples </h2>
+						<p> Upload your samples for the world to hear </p>
+						<a href="#upload" class="button jumplink">Upload Samples</a>
+					</section>
+					
+					<section>
+						<h2> Find Samples </h2>
+						<p> Search our database of user-generated samples </p>
+						<a href="#samples" class="button jumplink">Browse Samples</a>
 				</article>
 				
 				<!-- About -->
 				<article id="about" class="panel">
 					<article>
-						<h1> SampleShare </h1>
-						<p> Collaboration and Sharing for Music Samples Everywhere </p>
+						<header>
+							<h1> OceanShare </h1>
+							<p> Free Samples. For You. All The Time. </p>
+						</header>
+						
+						<section>
+							<h2> About OceanShare </h2>
+							<p> This site was built for the Local Hack Day at CU Boulder in less than eight hours by a group of (previously) random strangers: </p>
+							<ul>
+								<li> Alex Goodwin </li>
+								<li> Jared Jolton </li>
+								<li> Philip Chow </li>
+								<li> Jessica Masson </li>
+								<li> Karthik Kannan </li>
+								<li> Henna [Last name?] </li>
+							</ul>
+							<p> The goal is to create a service that allows people from all over the Internet to share music samples. Think of it as a cross between FreeSound and Splice - amazingly awesome. </p>
+							<p> Template taken from HTML5up.net </p>
+						</section>
 					</article>
 				</article>
 				
@@ -67,41 +93,6 @@
 				<!-- Upload Samples -->
 				<article id="upload" class="panel">
 					{% include 'upload.html' %}
-				</article>
-				
-				<!-- Contact -->
-				<article id="contact" class="panel">
-					<header>
-						<h2>Contact Me</h2>
-					</header>
-					
-					<section>
-						<form action="#" method="post">
-							<div>
-								<div class="row">
-									<div class="6u 12u$(mobile)">
-										<input type="text" name="name" placeholder="Name" />
-									</div>
-									
-									<div class="6u$ 12u$(mobile)">
-										<input type="text" name="email" placeholder="Email" />
-									</div>
-									
-									<div class="12u$">
-										<input type="text" name="subject" placeholder="Subject" />
-									</div>
-									
-									<div class="12u$">
-										<textarea name="message" placeholder="Message" rows="8"></textarea>
-									</div>
-									
-									<div class="12u$">
-										<input type="submit" value="Send Message" />
-									</div>
-								</div>
-							</div>
-						</form>
-					</section>
 				</article>
 				
 				<!-- User Account -->
